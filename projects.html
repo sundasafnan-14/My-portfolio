@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All Projects — Sundas Afnan</title>
+<meta name="description" content="All web development and design projects by Sundas Afnan, grouped by category.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="projects">
+<header class="nav"><div class="nav-in">
+<a href="index.html" class="logo" aria-label="Home">S.</a>
+<nav aria-label="Main"><ul class="links" id="navLinks"></ul></nav>
+<div class="social" id="navSocial"></div>
+<button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"></button></div></header>
+<div class="mobile-menu" id="mobileMenu"><ul id="mobileLinks"></ul><div class="social" id="mobileSocial"></div></div>
+
+<main class="allp">
+<section class="allp-head"><div class="wrap">
+<a href="index.html#projects" class="back"><i data-i="arrow"></i> Back to home</a>
+<h1 class="sec-title">All Projects</h1>
+<p class="sec-desc">Everything I have built and designed, sorted by category. Pick a category to focus on it.</p>
+<div class="filter" id="filter" role="tablist" aria-label="Filter projects by category"></div></div></section>
+<div class="wrap allp-body" id="allBody"></div>
+</main>
+
+<footer class="footer"><div class="wrap foot-in"><a href="index.html" class="logo">Sundas.</a>
+<nav aria-label="Footer"><ul class="foot-links" id="footLinks"></ul></nav>
+<ul class="foot-links small"><li><a href="https://www.linkedin.com/in/sundasafnan14/" data-link="linkedin">LinkedIn</a></li><li><a href="+923128329131" data-link="whatsapp" target="_blank" rel="noreferrer">WhatsApp</a></li><li><a href="sundasafnan9@gmail.com" data-link="email">Email</a></li></ul>
+<p class="copy">© 2026 Sundas Afnan. All rights reserved.</p></div></footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Design preview" hidden>
+<div class="lb-in"><div class="lb-img" id="lbImg"></div><div><h3 id="lbTitle"></h3><p id="lbCat"></p></div>
+<button class="lb-btn lb-close" id="lbClose" aria-label="Close"></button><button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous"></button><button class="lb-btn lb-next" id="lbNext" aria-label="Next"></button></div></div>
+<script src="data.js"></script>
+<script src="common.js"></script>
+<script src="projects.js"></script>
+</body></html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sundas Afnan — Frontend Web Developer & UI Designer</title>
+<meta name="description" content="Responsive, clean and user-focused web experiences.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/portrait-cutout.webp" type="image/webp">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+<header class="nav"><div class="nav-in">
+<a href="#home" class="logo" aria-label="Home">Sundas.</a>
+<nav aria-label="Main"><ul class="links" id="navLinks"></ul></nav>
+<div class="social" id="navSocial"></div>
+<button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"></button></div></header>
+<div class="mobile-menu" id="mobileMenu"><ul id="mobileLinks"></ul><div class="social" id="mobileSocial"></div></div>
+
+<main>
+<section id="home" class="hero"><div class="wrap hero-grid">
+<div class="hero-text reveal">
+<p class="hand hello">Hello, I'm</p>
+<h1>Sundas Afnan</h1>
+<p class="role">Frontend Web Developer &amp; UI Designer</p>
+<p class="lead">Turning bold ideas into experiences worth remembering....</p>
+<div class="btns"><a href="#projects" class="btn btn-fill">View My Work <i data-i="arrow"></i></a><a href="#contact" class="btn btn-line">Let's Connect</a></div>
+<ul class="hero-tech" id="heroTech"></ul></div>
+<div class="hero-art">
+<div class="arch"></div>
+<svg class="hero-orbit" viewBox="0 0 500 600" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true"><ellipse cx="300" cy="180" rx="230" ry="95" transform="rotate(-28 300 180)" stroke="#E8C7C0" stroke-opacity=".45"/></svg>
+<span class="leaf hero-leaf" data-leaf></span>
+<img class="hero-img" src="images/portrait-cutout.webp" alt="Portrait of Sundas Afnan" width="800" height="885" fetchpriority="high" decoding="async">
+<p class="hand build">Build<br>Design<br>Create<br><i data-i="heart"></i></p></div></div></section>
+
+<section id="about" class="about"><div class="wrap">
+<div class="about-top">
+<div class="photo-wrap"><span class="leaf about-leaf" data-leaf></span>
+<div class="photo-card"><div class="circle"></div><img src="images/portrait-cutout-sm.webp" alt="Sundas Afnan smiling, wearing glasses and a black turtleneck" width="480" height="531" loading="lazy" decoding="async"></div></div>
+<div class="reveal"><h2 class="sec-title">About Me</h2>
+<p class="about-p sec-desc">I build modern digital experiences that balance clean design, seamless interactions, and purposeful development. Every interface I create is designed to be intuitive, responsive, and memorable..</p>
+<p class="hand sign">Sundas Afnan <i data-i="heart"></i></p></div></div>
+<div class="about-bottom">
+<ul class="caps" id="caps"></ul>
+<img class="workspace" src="images/workspace.webp" alt="Pastel workspace with a laptop, pencil cup, books and a plant" width="374" height="363" loading="lazy" decoding="async"></div></div></section>
+
+<section id="projects" class="projects"><div class="wrap">
+<div class="sec-head"><div><h2 class="sec-title">My Projects</h2>
+<p class="sec-desc">Web development and design work in one place. Here are a few highlights, each one helped me learn, grow and create better experiences.</p></div>
+<a href="projects.html" class="viewall">View All Projects <i data-i="arrow"></i></a></div>
+<ul class="cat-chips" id="projCats" aria-label="Project categories"></ul>
+<div class="proj-grid" id="projGrid"></div>
+<div class="proj-more"><a href="projects.html" class="btn btn-line">Browse all <span id="projCount">0</span> projects by category <i data-i="arrow"></i></a></div></div></section>
+
+<section id="skills" class="tools">
+<div class="blob-bl" aria-hidden="true"></div><div class="blob-br" aria-hidden="true"></div>
+<span class="leaf deco-tr" data-leaf aria-hidden="true"></span><span class="leaf deco-bl" data-leaf aria-hidden="true"></span><span class="leaf deco-br" data-leaf aria-hidden="true"></span>
+<svg class="sp s-tr" viewBox="0 0 24 24" fill="none" stroke="#E8A99B" stroke-width="1" aria-hidden="true"><path d="M12 2c.8 5.5 4.5 9.2 10 10-5.500.8-9.200 4.500-10 10-.8-5.500-4.500-9.200-10-10 5.500-.8 9.200-4.500 10-10z"/></svg><svg class="sp s-br" viewBox="0 0 24 24" fill="none" stroke="#E8A99B" stroke-width="1" aria-hidden="true"><path d="M12 2c.8 5.5 4.5 9.2 10 10-5.500.8-9.200 4.500-10 10-.8-5.500-4.500-9.200-10-10 5.500-.8 9.200-4.500 10-10z"/></svg>
+<div class="wrap tools-grid">
+<div class="tools-left"><h2 class="sec-title">Tools I Work With</h2>
+<p class="sec-desc">A carefully chosen toolkit that helps me design, develop, and bring digital ideas to life.</p>
+<p class="hand tag">Different Tools.<br>Same Goal.<br>→ Great Results!<svg class="swoosh" viewBox="0 0 160 14" fill="none" stroke="#E8A99B" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M2 11C40 3 100 2 158 4"/></svg></p></div>
+<div class="orbit" id="orbit">
+<svg class="orbit-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+<defs><filter id="g"><feGaussianBlur stdDeviation=".5"/></filter><path id="o1" d="M50 10A46 40 0 1 1 49.99 10Z"/><path id="o2" d="M50 22A36 28 0 1 1 49.99 22Z"/><path id="o3" d="M50 31A22 19 0 1 1 49.99 31Z"/></defs>
+<ellipse cx="50" cy="50" rx="46" ry="40" fill="none" stroke="#E8A99B" stroke-opacity=".5" vector-effect="non-scaling-stroke"/>
+<ellipse cx="50" cy="50" rx="36" ry="28" fill="none" stroke="#E8A99B" stroke-opacity=".45" vector-effect="non-scaling-stroke"/>
+<ellipse cx="50" cy="50" rx="22" ry="19" fill="none" stroke="#E8A99B" stroke-opacity=".4" vector-effect="non-scaling-stroke"/>
+<g id="particles"></g></svg>
+<div class="orbit-center" id="orbitCenter" aria-live="polite">
+<svg class="tk-blob" viewBox="0 0 220 170" preserveAspectRatio="none" aria-hidden="true"><path d="M30 95C20 55 60 22 100 30 140 6 200 40 190 90 200 130 160 160 110 150 70 168 25 140 30 95Z" fill="rgba(201,154,145,.1)" stroke="rgba(232,199,192,.45)"/></svg>
+<div class="tk"><i data-i="heart"></i><p class="hand" id="tkName">My Toolkit</p><svg class="swoosh" viewBox="0 0 160 14" fill="none" stroke="#E8A99B" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M2 9C40 4 100 3 158 6"/></svg><span id="tkDesc"></span></div>
+<svg class="sp s-l" viewBox="0 0 24 24" fill="none" stroke="#E8A99B" stroke-width="1" aria-hidden="true"><path d="M12 2c.8 5.5 4.5 9.2 10 10-5.500.8-9.200 4.500-10 10-.8-5.500-4.500-9.200-10-10 5.500-.8 9.200-4.500 10-10z"/></svg><svg class="sp s-r" viewBox="0 0 24 24" fill="none" stroke="#E8A99B" stroke-width="1" aria-hidden="true"><path d="M12 2c.8 5.5 4.5 9.2 10 10-5.500.8-9.200 4.500-10 10-.8-5.500-4.500-9.200-10-10 5.500-.8 9.200-4.500 10-10z"/></svg></div></div></div></section>
+
+<section id="experience" class="exp"><div class="wrap exp-grid">
+<div class="exp-left"><h2 class="sec-title">Where I've Worked</h2><span class="dash" aria-hidden="true"></span><p class="sec-desc">My professional journey so far.</p>
+<a href="resume/Sundas_Afnan_Resume.pdf" download="Sundas_Afnan_Resume.pdf" class="resume"><i data-i="file"></i> View Resume <i data-i="download"></i></a></div>
+<ol class="jobs" id="jobs"></ol></div></section>
+
+<section id="services" class="services" aria-labelledby="svc"><div class="wrap"><h2 id="svc" class="sec-title">What I Can Do</h2><span class="dash" aria-hidden="true"></span>
+<ul class="svc-grid" id="svcGrid"></ul></div></section>
+
+<section id="contact" class="contact">
+<div class="contact-bg" id="contactBg" aria-hidden="true">
+<svg viewBox="0 0 600 280" preserveAspectRatio="xMinYMax slice" role="img" aria-label="">
+<defs><radialGradient id="glow" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#C99A91" stop-opacity=".35"/><stop offset="1" stop-color="#C99A91" stop-opacity="0"/></radialGradient>
+<linearGradient id="desk" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#3a302d"/><stop offset="1" stop-color="#1b1716"/></linearGradient>
+<linearGradient id="scr" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#2b2322"/><stop offset="1" stop-color="#1d1818"/></linearGradient></defs>
+<ellipse cx="250" cy="150" rx="230" ry="130" fill="url(#glow)"/>
+<rect x="0" y="236" width="600" height="44" fill="url(#desk)"/><rect x="0" y="236" width="600" height="1.500" fill="#E8C7C0" opacity=".25"/>
+<!-- plant -->
+<g transform="translate(12 0)"><path d="M40 236v-36h28v36z" fill="#3b2f2c"/><g stroke="#C99A91" stroke-width="1.200" fill="#6a4a44" fill-opacity=".55"><path d="M54 200C44 170 40 150 52 126 62 152 62 176 54 200Z"/><path d="M54 200C70 178 84 168 98 164 92 184 76 196 54 200Z"/><path d="M54 200C36 188 22 176 16 158 36 160 50 176 54 200Z"/><path d="M54 200C56 176 64 150 80 136 80 160 70 184 54 200Z"/></g></g>
+<!-- phone -->
+<g transform="rotate(-6 100 226)"><rect x="70" y="218" width="76" height="16" rx="4" fill="#1b1919" stroke="#4a3f3c"/><rect x="74" y="221" width="62" height="10" rx="2" fill="#E8C7C0" opacity=".55"/><circle cx="141" cy="226" r="1.800" fill="#4a3f3c"/></g>
+<!-- earbuds + case -->
+<g><rect x="156" y="220" width="30" height="16" rx="6" fill="#ece6df"/><rect x="156" y="226" width="30" height="1" fill="#b9aea6"/><circle cx="171" cy="223" r="1.200" fill="#C99A91"/>
+<circle cx="196" cy="232" r="4" fill="#ece6df"/><path d="M196 236q2 6 6 5" stroke="#ece6df" stroke-width="2.500" fill="none" stroke-linecap="round"/>
+<circle cx="214" cy="233" r="4" fill="#ece6df"/><path d="M214 237q2 6 6 4" stroke="#ece6df" stroke-width="2.500" fill="none" stroke-linecap="round"/></g>
+<!-- laptop -->
+<path d="M230 232h232l20 6H214z" fill="#2d2726"/><path d="M214 238h268" stroke="#4a3f3c" stroke-width="1"/>
+<rect x="252" y="96" width="190" height="136" rx="7" fill="#1c1818" stroke="#4a3f3c"/>
+<rect x="259" y="103" width="176" height="122" rx="3" fill="url(#scr)"/>
+<g opacity=".9"><rect x="269" y="116" width="56" height="5" rx="2.500" fill="#E8C7C0"/><rect x="281" y="128" width="86" height="5" rx="2.500" fill="#C99A91"/><rect x="281" y="140" width="64" height="5" rx="2.500" fill="#8aa4c8" opacity=".8"/><rect x="293" y="152" width="98" height="5" rx="2.500" fill="#C99A91" opacity=".8"/><rect x="293" y="164" width="52" height="5" rx="2.500" fill="#E8C7C0"/><rect x="281" y="176" width="76" height="5" rx="2.500" fill="#8aa4c8" opacity=".8"/><rect x="269" y="188" width="40" height="5" rx="2.500" fill="#E8C7C0"/><rect x="316" y="188" width="8" height="5" rx="1" fill="#fff"><animate attributeName="opacity" values="1;0;1" dur="1.100s" repeatCount="indefinite"/></rect></g>
+<rect x="259" y="103" width="176" height="122" rx="3" fill="url(#glow)" opacity=".6"/>
+<!-- coffee -->
+<g><ellipse cx="520" cy="236" rx="38" ry="6" fill="#241f1e"/><path d="M496 196h50v30a10 10 0 0 1-10 10h-30a10 10 0 0 1-10-10z" fill="#E8C7C0"/><path d="M546 205h6a9 9 0 0 1 0 18h-6" stroke="#E8C7C0" stroke-width="4.500" fill="none"/><ellipse cx="521" cy="196" rx="25" ry="5" fill="#5b3a2e"/><ellipse cx="521" cy="195.500" rx="20" ry="3" fill="#7a5040"/>
+<g stroke="#E8C7C0" stroke-width="2.200" fill="none" stroke-linecap="round" opacity=".6"><path class="steam" d="M510 186c-6-8 6-12 0-22"/><path class="steam s2" d="M522 184c-6-8 6-12 0-24"/><path class="steam s3" d="M534 186c-6-8 6-12 0-20"/></g></g>
+</svg></div><div class="contact-fade" aria-hidden="true"></div>
+<div class="wrap contact-in"><div class="spacer"></div>
+<div><h2 class="sec-title">Have a project in mind?</h2><p class="sec-desc">Let's create something amazing together.</p>
+<p class="chosen" id="chosenNote" role="status" hidden><span>Selected: <b id="chosenTxt"></b></span><button type="button" id="chosenClear" aria-label="Clear selection">Clear</button></p></div>
+<div class="btns"><a href="sundasafnan9@gmail.com" class="btn btn-fill" data-link="email">Email Me <i data-i="arrow"></i></a><a href="https://www.linkedin.com/in/sundasafnan14/" class="btn btn-line light" data-link="linkedin" target="_blank" rel="noreferrer"><i data-i="linkedin"></i> LinkedIn</a></div>
+<p class="hand reach">Feel free<br>to reach out<br><i data-i="heart"></i></p></div></section>
+</main>
+
+<footer class="footer"><div class="wrap foot-in"><a href="#home" class="logo">Sundas.</a>
+<nav aria-label="Footer"><ul class="foot-links" id="footLinks"></ul></nav>
+<ul class="foot-links small"><li><a href="https://www.linkedin.com/in/sundasafnan14/" data-link="linkedin">LinkedIn</a></li><li><a href="+923128329131" data-link="whatsapp" target="_blank" rel="noreferrer">WhatsApp</a></li><li><a href="sundasafnan9@gmail.com" data-link="email">Email</a></li></ul>
+<p class="copy">© 2026 Sundas Afnan. All rights reserved.</p></div></footer>
+
+<div class="lightbox" id="svcModal" role="dialog" aria-modal="true" aria-labelledby="svcTitle" hidden>
+<div class="svc-panel"><button class="lb-btn lb-close" id="svcClose" aria-label="Close"></button><div id="svcBody"></div></div></div>
+<script src="data.js"></script>
+<script src="common.js"></script>
+<script src="script.js"></script>
+</body></html>
